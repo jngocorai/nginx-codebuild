@@ -22,7 +22,7 @@
     "Parameters": {
         "NginxImage": {
             "Default": "nginx:alpine",
-            "Description": "The nginx container image to run (e.g. nginx:alpine)",
+            "Description": "Describes the nginx container image to run (e.g. nginx:alpine)",
             "Type": "String"
         }
     },
@@ -211,7 +211,7 @@
                 "Cluster": {
                     "Ref": "ECSCluster"
                 },
-                "DesiredCount": 1,
+                "DesiredCount": 2,
                 "LaunchType": "FARGATE",
                 "LoadBalancers": [
                     {
