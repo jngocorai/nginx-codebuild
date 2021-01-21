@@ -179,8 +179,8 @@ TaskDefinition = t.add_resource(ecs.TaskDefinition(
     "TaskDefinition",
     DependsOn=TaskExecutionPolicy,
     RequiresCompatibilities=["FARGATE"],
-    Cpu="512",
-    Memory="1GB",
+    Cpu="256",
+    Memory="0.5",
     NetworkMode="awsvpc",
     ExecutionRoleArn=GetAtt(TaskExecutionRole, "Arn"),
     ContainerDefinitions=[
